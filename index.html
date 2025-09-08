@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sorting Visualizer — Vanilla JS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header><h1>Sorting Visualizer (Vanilla JS)</h1></header>
+
+  <section class="controls">
+    <button id="btn-new">Generate New Array</button>
+    <button id="btn-sort">Start Sort</button>
+    <label class="inline">
+      Algorithm:
+      <select id="algorithm">
+        <option value="bubble">Bubble</option>
+        <option value="selection">Selection</option>
+        <option value="insertion">Insertion</option>
+        <option value="merge">Merge</option>
+        <option value="quick">Quick</option>
+      </select>
+    </label>
+    <label class="inline">
+      Size: <input id="size" type="range" min="5" max="120" value="40"/>
+      <span id="sizeVal">40</span>
+    </label>
+    <label class="inline">
+      Speed (ms): <input id="speed" type="range" min="0" max="400" value="80"/>
+      <span id="speedVal">80</span>
+    </label>
+  </section>
+
+  <main><div id="bars" class="bars"></div></main>
+  <footer><div id="status">Ready.</div></footer>
+
+  <script src="core/util.js"></script>
+  <script src="core/animator.js"></script>
+  <script src="core/array.js"></script>
+  <script src="algorithms/bubbleSort.js"></script>
+  <script src="algorithms/selectionSort.js"></script>
+  <script src="algorithms/insertionSort.js"></script>
+  <script src="algorithms/mergeSort.js"></script>
+  <script src="algorithms/quickSort.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
