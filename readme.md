@@ -2,6 +2,7 @@
 
 ## Basic file structure (following ChatGPT advise)
 
+```
 sorting-visualizer/
 │── index.html        <-- main HTML page
 │── style.css         <-- styling for bars, buttons, layout
@@ -17,7 +18,7 @@ sorting-visualizer/
 │   ├── animator.js   <-- handles bar swapping animations
 │   ├── array.js      <-- generate/shuffle/reset arrays
 │   └── utils.js      <-- helper functions (like sleep)
-
+```
 
 ## Preview Screenshot
 
